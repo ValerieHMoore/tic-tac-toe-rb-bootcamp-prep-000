@@ -1,4 +1,5 @@
 require_relative '../lib/tic_tac_toe.rb'
+require "pry"
 
 describe './lib/tic_tac_toe.rb' do  
   describe '#play' do
@@ -118,7 +119,7 @@ describe './lib/tic_tac_toe.rb' do
     it 'plays through an entire game' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       allow($stdout).to receive(:puts)
-
+binding.pry
       expect(self).to receive(:gets).and_return("1")
       expect(self).to receive(:gets).and_return("2")
       expect(self).to receive(:gets).and_return("3")
