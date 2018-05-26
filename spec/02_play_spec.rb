@@ -122,7 +122,6 @@ describe './lib/tic_tac_toe.rb' do
       expect(self).to receive(:gets).and_return("1")
       expect(self).to receive(:gets).and_return("2")
       expect(self).to receive(:gets).and_return("3")
-      binding.pry
       expect(self).to receive(:gets).and_return("4")
       expect(self).to receive(:gets).and_return("5")
       expect(self).to receive(:gets).and_return("6")
